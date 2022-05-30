@@ -1,0 +1,130 @@
+﻿body {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+.form-group {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    margin-top:50px;
+}
+
+.time-timebox > span,
+.time-timebox2 > span,
+.time-timebox3 > span,
+.time-timebox4 > span {
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border: 2px solid black;
+}
+    .time-timeboxall > span:hover{
+        color:orange;
+        cursor:pointer;
+        border: 2px solid orange;
+        transition:0.3s ease;
+    }
+
+    .time-box,
+    .time-box2,
+    .time-box3,
+    .time-box4 {
+        margin-left: 30px;
+        position: relative;
+        display: flex;
+        width: 800px;
+        border: 2px solid black;
+        justify-content: space-around;
+        height: 80px;
+        line-height: 80px;
+        margin-top: 70px;
+    }
+    .time-box::before,
+    .time-box2::before,
+    .time-box3::before,
+    .time-box4::before {
+        content: "";
+        background-color: orange;
+        font-size: 18px;
+        top: -42px;
+        left: -2px;
+        position: absolute;
+        width: 350px;
+        height: 40px;
+    }
+    .time-box::after {
+        content: "RAP - Hà Nội";
+        top: -61px;
+        left: 10px;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+    }
+    .time-box2::after {
+        content: "RAP - Đà Nẵng";
+        top: -61px;
+        left: 10px;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+    }
+    .time-box3::after {
+        content: "RAP - Sài Gòn";
+        top: -61px;
+        left: 10px;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+    }
+    .time-box4::after {
+        content: "RAP - Cần Thơ";
+        top: -61px;
+        left: 10px;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+    }
+
+
+.time-slect {
+    display:flex;
+}
+.time-slect .slect .number-chair ul {
+    list-style: none;
+}
+.number-chair{
+    display:flex;
+}
+.slect .select-title .name-title {
+    font-size:40px;
+    margin-left:80px;
+    background-color:orange;
+    color:white;
+    width:420px;
+    padding:5px 10px;
+}
+.slect {
+    margin-left:30px;
+}
+
+.number-chair ul {
+    padding: 5px 12px;
+    margin: 10px 10px;
+    border: 2px solid black;
+}
+
+.number-chair ul:hover{
+    background-color:orange;
+    color:white;
+    cursor:pointer;
+    transition:0.3s ease;
+}
